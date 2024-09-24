@@ -1,0 +1,61 @@
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(
+    90deg,
+    #ee82ee 0%,
+    #7d00d4 34%,
+    #9400ff 71%,
+    #ee82ee 100%
+  );
+  }
+  
+  .signin-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .signin-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Input Fields */
+  .signin-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .signin-form input:focus {
+    border-color: #646cff; /* Border color on focus */
+  }
+  
+  /* Submit Button */
+  .signin-form button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #646cff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .signin-form button:hover {
+    background-color: #4a56e2;
+  }
+  
