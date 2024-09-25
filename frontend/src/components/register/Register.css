@@ -1,33 +1,27 @@
-.signin-container {
+.register-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(
-    90deg,
-    #ee82ee 0%,
-    #7d00d4 34%,
-    #9400ff 71%,
-    #ee82ee 100%
-  );
+    background-color: #f5f5f5;
   }
   
-  .signin-form {
+  .register-form {
     background-color: white;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
   }
   
-  .signin-form h2 {
+  .register-form h2 {
     text-align: center;
     color: #333;
     margin-bottom: 1.5rem;
   }
   
-  .signin-form input {
+  .register-form input {
     width: 100%;
     padding: 0.8rem;
     margin-bottom: 1rem;
@@ -37,14 +31,14 @@
     transition: border-color 0.3s ease-in-out;
   }
   
-  .signin-form input:focus {
-    border-color: #646cff;
+  .register-form input:focus {
+    border-color: #61dafb;
   }
   
-  .signin-form button {
+  .register-form button {
     width: 100%;
     padding: 0.8rem;
-    background-color: #646cff;
+    background-color: #61dafb;
     color: white;
     border: none;
     border-radius: 6px;
@@ -53,7 +47,7 @@
     transition: background-color 0.3s ease-in-out;
   }
   
-  .signin-form button:hover {
-    background-color: #4a56e2;
+  .register-form button:hover {
+    background-color: #4da9d8;
   }
   
