@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './SignIn.css';
 
 function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  const usenav = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,6 +21,7 @@ function SignIn() {
       const data = await response.json();
       if (data.message === 'Login successful') {
         alert('You are logged in!');
+        usenav('/dashboard')
       } else {
         alert(data.message);
       }
