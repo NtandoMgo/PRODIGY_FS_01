@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./SignIn.css";
 
-function SignIn() {
+function SignIn({onSignIn}) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -21,6 +21,7 @@ function SignIn() {
       const data = await response.json();
       if (data.message === "Login successful") {
         alert("You are logged in!");
+        onSignIn();
         usenav("/dashboard");
       } else {
         alert(data.message);

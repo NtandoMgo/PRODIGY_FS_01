@@ -60,3 +60,28 @@
     background-color: #4da9d8;
   }
   
+  @media (max-width: 768px) {
+    .register-container {
+      padding: 10px;
+    }
+  
+    .register-form {
+      padding: 1.5rem;
+      width: 100%;
+      max-width: none;
+    }
+  
+    .register-form input {
+      padding: 0.7rem;
+      font-size: 0.9rem;
+    }
+  
+    .register-form button {
+      padding: 0.7rem 1.2rem;
+      font-size: 0.9rem; 
+    }
+  
+    .button-container {
+      text-align: center;
+    }
+  }

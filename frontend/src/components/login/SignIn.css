@@ -62,3 +62,29 @@
     background-color: #4a56e2;
   }
   
+  @media (max-width: 480px) {
+    .signin-container {
+      padding: 10px;
+    }
+    .signin-form {
+      padding: 1.5rem;
+      width: 100%;
+      max-width: none;
+    }
+    .button-containter {
+      text-align: center;
+    }
+
+    .signin-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .signin-form input {
+        padding: 0.6rem; 
+        font-size: 0.9rem;
+    }
+
+    .signin-form button {
+        font-size: 0.9rem;
+    }
+}
