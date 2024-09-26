@@ -1,32 +1,32 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './SignIn.css';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./SignIn.css";
 
 function SignIn() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const usenav = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://127.0.0.1:5000/login', {
-        method: 'POST',
+      const response = await fetch("http://127.0.0.1:5000/login", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ email, password }),
       });
       const data = await response.json();
-      if (data.message === 'Login successful') {
-        alert('You are logged in!');
-        usenav('/dashboard')
+      if (data.message === "Login successful") {
+        alert("You are logged in!");
+        usenav("/dashboard");
       } else {
         alert(data.message);
       }
     } catch (error) {
-      console.error('Error during login:', error);
+      console.error("Error during login:", error);
     }
   };
 
@@ -48,7 +48,9 @@ function SignIn() {
           placeholder="Password"
           required
         />
-        <button type="submit">Sign In</button>
+        <div className="button-containter">
+          <button type="submit">Sign In</button>
+        </div>
       </form>
     </div>
   );

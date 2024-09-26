@@ -28,7 +28,7 @@
   }
   
   .signin-form input {
-    width: 100%;
+    width: 90%;
     padding: 0.8rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
@@ -40,9 +40,14 @@
   .signin-form input:focus {
     border-color: #646cff;
   }
+
+  .button-containter {
+    text-align: right;
+    padding-right: 15px;
+  }
   
   .signin-form button {
-    width: 100%;
+    /* width: 100%; */
     padding: 0.8rem;
     background-color: #646cff;
     color: white;
